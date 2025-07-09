@@ -4,24 +4,6 @@
   </head>
 
   <script>
-
-    AFRAME.registerComponent('redirect', {
-  
-      schema: {
-        href: {default: ''}
-      },
-  
-      init: function() {
-        var data = this.data;
-        var el = this.el; 
-  
-         // react to the click
-         this.el.addEventListener('click', function () {
-           // navigate to another url
-           window.location = data.href;
-         })
-      }
-    });
   
   </script>
 
@@ -82,7 +64,7 @@
     ></a-image>
     
      <a-sky color="darkblue"></a-sky>
-     <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+     <a-plane color="white" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
     
      <a-camera>
       <a-entity cursor="fuse: false; rayOrigin:mouse;" raycaster="objects:a-image" position="0 0 -1" >
